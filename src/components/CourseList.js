@@ -5,7 +5,10 @@ import db from "../db"
 const CourseList = () => {
 
     return (
-         <div class="container my-5 mt-5">
+         <div class="container my-5 mt-5" id='courses'>
+            <center >
+                <h1>Available Courses</h1>
+            </center>
          <div class="row">
             {db.map(course => {
                 return (<Course

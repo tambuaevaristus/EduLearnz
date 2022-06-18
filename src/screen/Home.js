@@ -11,7 +11,7 @@ function Home() {
 
         <CourseDesc />
         <CourseList />
-        <Footer />
+        
 
 
     </div>

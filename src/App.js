@@ -6,6 +6,7 @@ import Login from "./screen/Login";
 import Home from "./screen/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CourseContent from "./screen/CourseContent";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -15,15 +16,16 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/course/{id}">
-             {/* <Header /> */}
+          <Route path="/course">
+             <Header />
             <CourseContent />
+            <Footer />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
-        
         </Switch>
       </div>
     </Router>

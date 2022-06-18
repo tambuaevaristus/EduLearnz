@@ -5,9 +5,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 // import
 
 export default function Course(props) {
+
+console.log(props)
   return (
     <div className="col-md-3">
       <div class="card my-4 mx-1">
@@ -20,11 +23,16 @@ export default function Course(props) {
           <small class="text-muted">
             <i class="bi bi-alarm"></i> Last updated 3 mins ago
           </small>
-          <a href={"course/" + props.courseName}>
+          <Link
+            to={{
+              pathname: "/course",
+               state:"helloo oo",
+            }}
+          >
             <button type="button" class="btn mx-2 btn-outline-primary">
               Learn
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
