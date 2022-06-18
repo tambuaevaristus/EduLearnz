@@ -5,9 +5,8 @@ import db from "../db"
 const CourseList = () => {
 
     return (
-         <div class="container-fluid my-5 mt-5">
-         <div class="card-group">
-
+         <div class="container my-5 mt-5">
+         <div class="row">
             {db.map(course => {
                 return (<Course
                     Key={course.id}

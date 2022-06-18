@@ -13,8 +13,7 @@ let db = [
     },
     {
         "id": 2,
-        "imgUrl": "",
-        "short_description": "https://media.istockphoto.com/photos/wooden-mannequin-demonstrating-this-word-picture-id185085453?b=1&k=20&m=185085453&s=170667a&w=0&h=Xu2LVTiykimHnzferN48bi8wSqpGE05wKM8r69WLN2Q=",
+        "imgUrl": "https://media.istockphoto.com/photos/wooden-mannequin-demonstrating-this-word-picture-id185085453?b=1&k=20&m=185085453&s=170667a&w=0&h=Xu2LVTiykimHnzferN48bi8wSqpGE05wKM8r69WLN2Q=",
         "Course_name": "SQl",
         "course_description": "Structured Query Language (SQL) is a standardized programming language that is used to manage relational databases and perform various operations on the data in them. Initially created in the 1970s, SQL is regularly used not only by database administrators, but also by developers writing data integration scripts and data analysts looking to set up and run analytical queries.",
         "Course_rating": 2,
@@ -94,6 +93,5 @@ let db = [
         "Course_instructor": "6/20/2021",
         "Course_content": "Fat graft of skin and subcutaneous tissue"
     },
-    
     ]
 export default  db 
