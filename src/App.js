@@ -1,6 +1,6 @@
 import Banner from './components/Banner';
 import CourseList from './components/CourseList';
-// import Footer from './components/footer';
+import Footer from './components/footer';
 import Header from './components/Header';
 import {CourseDescription} from './components/courseDesc';
 
@@ -12,6 +12,7 @@ function App() {
       <Banner />
       <CourseList />
       <CourseDescription />
+      <Footer />
     </div>
   );
 }
