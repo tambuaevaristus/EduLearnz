@@ -1,6 +1,6 @@
-import react from 'react';
 import Banner from './components/Banner';
 import CourseList from './components/CourseList';
+import Footer from './components/footer';
 import Header from './components/Header';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Banner />
       <CourseList />
+      <Footer/>
     </div>
   );
 }
