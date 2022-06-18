@@ -1,63 +1,63 @@
 import React, { useState } from "react";
 import { Link , useHistory} from "react-router-dom";
-// import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import "./Login.css";
-// import app from "../firebase";
+import app from "../firebase";
 
 
 
 function Login() {
-//   const auth = getAuth(app);
-//   const history = useHistory();
+  const auth = getAuth(app);
+  const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
 
-//   const signIn = (e) => {
-//     e.preventDefault();
-//     //   firebase stuff
+  const signIn = (e) => {
+    e.preventDefault();
+    //   firebase stuff
 
-//     signInWithEmailAndPassword(auth, email, password)
-//   .then((userCredential) => {
-//     // Signed in 
-//     const user = userCredential.user;
+    signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
 
-//     if(auth){
-//         history.push('/')
-//     }
+    if(auth){
+        history.push('/')
+    }
 
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     alert("sorry ya wahala de : " + errorCode)
-//   });
-//   };
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert("sorry ya wahala de : " + errorCode)
+  });
+  };
 
-//   const register = (e) => {
-//     e.preventDefault();
+  const register = (e) => {
+    e.preventDefault();
  
-//     createUserWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//       // Signed in
-//       const user = userCredential.user;
-//       alert("successfully created an acccount")
+    createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in
+      const user = userCredential.user;
+      alert("successfully created an acccount")
 
-//       if(auth){
-//           history.push('/')
-//       }
-//       // ...
-//     })
-//     .catch((error) => {
-//       const errorCode = error.code;
-//       const errorMessage = error.message;
+      if(auth){
+          history.push('/')
+      }
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
 
 
 
-//       alert(errorCode)
-//       // ..
-//     });
-//   }
+      alert(errorCode)
+      // ..
+    });
+  }
   return (
     <div className="login container mt-4">
       <Link to="/">
@@ -86,7 +86,7 @@ function Login() {
           <button
             className="login__signInButton"
             type="submit"
-            // onClick={signIn}
+            onClick={signIn}
           >
             Sign In
           </button>
@@ -97,7 +97,7 @@ function Login() {
           </p>
           <button
             className="login__registerButton"
-            // onClick={register}
+            onClick={register}
             type="submit"
           >
             Create Account

@@ -9,21 +9,23 @@ import Typography from "@mui/material/Typography";
 
 export default function Course(props) {
   return (
-    <div class="card mx-3">
-      <img src={props.imgUrl} class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{props.courseName}</h5>
-        <p class="card-text">{props.courseDes}</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">
-          <i class="bi bi-alarm"></i> Last updated 3 mins ago
-        </small>
-        <a href={"course/"+props.courseName}>
-          <button type="button" class="btn mx-2 btn-outline-primary">
-            Learn
-          </button>
-        </a>
+    <div className="col-md-3">
+      <div class="card my-4 mx-1">
+        <img src={props.imgUrl} class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{props.courseName}</h5>
+          <p class="card-text">{props.courseDes}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">
+            <i class="bi bi-alarm"></i> Last updated 3 mins ago
+          </small>
+          <a href={"course/" + props.courseName}>
+            <button type="button" class="btn mx-2 btn-outline-primary">
+              Learn
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
