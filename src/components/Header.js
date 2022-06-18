@@ -36,9 +36,9 @@ const Header = () => {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-light position-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">EDULEARNZ</a>
+    <a class="navbar-brand" href="#index">EDULEARNZ</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
