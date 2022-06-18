@@ -26,7 +26,7 @@ export default function Course(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Share</Button>
+          <Button size="small"><i class="bi bi-alarm" fontSize={'20px'}></i> Share</Button>
           <Button size="small">Learn More</Button>
         </CardActions>
       </Card>
