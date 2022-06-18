@@ -5,15 +5,20 @@ import db from "../db"
 const CourseList = () => {
 
     return (
-        <div className="container my-5 mx-auto bg-light row d-flex">
+         <div class="container-fluid my-5 mt-5">
+         <div class="card-group">
+
             {db.map(course => {
                 return (<Course
                     Key={course.id}
-                    courseDes={course.course_description}
+                    imgUrl={course.imgUrl}
                     courseName = {course.Course_name}
+                    shortDescription={course.short_description}
                 />)
             })}
         </div>
+        </div>
+
     );
 }
 
