@@ -1,15 +1,28 @@
 import react from 'react';
-import Banner from './components/Banner';
-import CourseList from './components/CourseList';
+
 import Header from './components/Header';
+import Login from './screen/Login';
+
+import Home from './screen/Home';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Banner />
-      <CourseList />
-    </div>
+     
+
+      <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route path="/">
+          <Header />
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

@@ -33,3 +33,6 @@ export default function Course() {
     </div>
   );
 }
+
+
+// Api key = AIzaSyARVJU6XWIEtYUpF_DwXRXhZPjeiqPWAwY
