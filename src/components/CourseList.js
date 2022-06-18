@@ -3,8 +3,26 @@ import Course from './Course';
 
 const CourseList = () => {
     return (
-        <div>
+        <div className="container my-5 d-flex row">
+            {/* Course */}
+
+            
             <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+            <Course />
+
         </div>
     );
 }
