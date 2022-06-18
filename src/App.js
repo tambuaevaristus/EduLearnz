@@ -1,9 +1,14 @@
 import react from 'react';
+import Banner from './components/Banner';
+import CourseList from './components/CourseList';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <Header />
+      <Banner />
+      <CourseList />
     </div>
   );
 }
