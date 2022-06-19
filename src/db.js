@@ -2,7 +2,7 @@ let db = [
     {
         "id": 1,
         "imgUrl": "https://media.istockphoto.com/photos/wooden-mannequin-demonstrating-this-word-picture-id185085453?b=1&k=20&m=185085453&s=170667a&w=0&h=Xu2LVTiykimHnzferN48bi8wSqpGE05wKM8r69WLN2Q=",
-        "short_description": "",
+        "short_description": "Learn the basics of machine learning with TensorFlow's guided curriculum and resources. ",
         "Course_name": "Machine Learning",
         "course_description": "Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks. It is seen as a part of artificial intelligence. Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so.Machine learning algorithms are used in a wide variety of applications, such as in medicine, email filtering, speech recognition, and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks",
         "Course_rating": 1,
@@ -15,6 +15,7 @@ let db = [
         "id": 2,
         "imgUrl": "https://media.istockphoto.com/photos/wooden-mannequin-demonstrating-this-word-picture-id185085453?b=1&k=20&m=185085453&s=170667a&w=0&h=Xu2LVTiykimHnzferN48bi8wSqpGE05wKM8r69WLN2Q=",
         "Course_name": "SQl",
+        "short_description": "Leanring custom sql database and how to interact with Apache servers",
         "course_description": "Structured Query Language (SQL) is a standardized programming language that is used to manage relational databases and perform various operations on the data in them. Initially created in the 1970s, SQL is regularly used not only by database administrators, but also by developers writing data integration scripts and data analysts looking to set up and run analytical queries.",
         "Course_rating": 2,
         "Course_code": 2,
@@ -25,7 +26,7 @@ let db = [
     {
         "id": 3,
         "imgUrl": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVhY3R8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "short_description": "",
+        "short_description": "Learn React in ",
         "Course_name": "React",
         "course_description": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes",
         "Course_rating": 3,
@@ -83,6 +84,18 @@ let db = [
     },
     {
         "id": 8,
+        "imgUrl": "https://www.reshot.com/preview-assets/illustrations/QDPXUNFLM4/promo-codes-for-e-commerce-QDPXUNFLM4-w1600.jpg",
+        "short_description": "Leanrn C programming in Building awsom Kernel",
+        "Course_name": "C Programming",
+        "course_description": "Removal of ligature from ureter",
+        "Course_rating": 8,
+        "Course_code": 8,
+        "course-created": "12/17/2021",
+        "Course_instructor": "6/20/2021",
+        "Course_content": "Fat graft of skin and subcutaneous tissue"
+    },
+    {
+        "id": 9,
         "imgUrl": "https://www.reshot.com/preview-assets/illustrations/QDPXUNFLM4/promo-codes-for-e-commerce-QDPXUNFLM4-w1600.jpg",
         "short_description": "Leanrn C programming in Building awsom Kernel",
         "Course_name": "C Programming",

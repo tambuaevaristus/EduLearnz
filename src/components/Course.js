@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function Course(props) {
 
-console.log(props)
+console.log()
   return (
     <div className="col-md-3">
       <div class="card my-4 mx-1">
@@ -25,8 +25,8 @@ console.log(props)
           </small>
           <Link
             to={{
-              pathname: "/course",
-               state:"helloo oo",
+              pathname: "/course/",
+               state:"helloo oo"
             }}
           >
             <button type="button" class="btn mx-2 btn-outline-primary">
