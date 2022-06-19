@@ -8,12 +8,12 @@ function CourseContent(props) {
     <div>
       <img 
         height="300px"
-        src="https://images.unsplash.com/photo-1629904853716-f0bc54eea481?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        src={props.image}
         class="d-block w-100"
         alt="..."
       />
 
-<center >   <h1 className="">COURSE CONTENT</h1>
+<center >   <h1 className="">{props.courseName}</h1>
 </center>
       <div class="container mt-5">
         <div class="row content">
@@ -22,18 +22,20 @@ function CourseContent(props) {
               <small>Course Content</small>
             </h4>
             <hr />
-            <h2>Fundamentals of Artificial Intelligeince</h2>
+            <h2>{props.courseName}</h2>
             <h5>
+
+            <h4><small>{props.descriprion}</small></h4>
               <span class="glyphicon glyphicon-time"></span> Post by Tambua
               Evaristus, Sep 27, 2015.
             </h5>
             <h5>
-              <span class="label label-danger">Food</span>{" "}
-              <span class="label label-primary">Ipsum</span>
+              <span class="label label-danger">{props.shortDescription}</span>{" "}
             </h5>
             <br />
             <p>
-              Food is my passion. Lorem ipsum dolor sit amet, consectetur
+                {props.courseContent}
+              {/* Food is my passion. Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -42,7 +44,7 @@ function CourseContent(props) {
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              consequat. */}
             </p>
             <br />
             <br />
