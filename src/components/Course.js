@@ -26,7 +26,7 @@ export default function Course(props) {
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            data-bs-target={`#${props.courseName}`}
             class="btn mx-2 btn-outline-primary"
           >
             Learn
@@ -36,7 +36,7 @@ export default function Course(props) {
 
       <div
         class="modal fade  modal-dialog-scrollable "
-        id="staticBackdrop"
+        id={props.courseName}
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
